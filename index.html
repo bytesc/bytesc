@@ -54,6 +54,12 @@
           <a class="nav-link" href="#prj">我的项目</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#copilot">Data-copilot 行业应用</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#copilot-t">Data-copilot 项目演进</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#ctc">联系方式</a>
         </li>
 <!--        <li class="nav-item dropdown">-->
@@ -139,6 +145,12 @@
           >
             <li>
               <a class="dropdown-item" href="#prj"><i class="fa-solid fa-laptop-code me-3"></i>我的项目</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#copilot"></i>Data-copilot 行业应用</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#copilot-t"></i>Data-copilot 项目演进</a>
             </li>
             <li>
               <a class="dropdown-item" href="#ctc"><i class="fa-solid fa-address-book me-3"></i>联系方式</a>
@@ -237,16 +249,16 @@
 
 <!-- Timeline Section -->
 <!-- Timeline Section -->
-<section class="py-5 bg-light position-relative">
+<section class="py-5 bg-light position-relative" >
   <div class="container position-relative">
     
     <!-- 标题 -->
-    <h4 class="text-center mb-4 fw-bold">
+    <h5 class="text-center mb-4 fw-bold">
       <i class="fa-solid fa-timeline me-2 text-primary"></i> Data-Copilot 项目演进历程
-    </h4>
+    </h5>
     
     <!-- 时间线容器 -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="copilot-t">
       <div class="col-lg-11 position-relative">
         
         <!-- 垂直连接线 -->
@@ -260,7 +272,7 @@
             <h2 class="accordion-header">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202405" >
                 <div class="d-flex align-items-center w-100">
-                  <div class="timeline-node bg-primary me-3">
+                  <div class="timeline-node me-3" style="background-color: #e74c3c;">
                     <i class="fa-solid fa-robot"></i>
                   </div>
                   <div class="flex-grow-1">
@@ -305,7 +317,7 @@
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202410">
                 <div class="d-flex align-items-center w-100">
-                  <div class="timeline-node bg-info me-3">
+                  <div class="timeline-node me-3" style="background-color: #f39c12;">
                     <i class="fa-solid fa-brain"></i>
                   </div>
                   <div class="flex-grow-1">
@@ -350,7 +362,7 @@
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202501">
                 <div class="d-flex align-items-center w-100">
-                  <div class="timeline-node bg-success me-3">
+                  <div class="timeline-node me-3" style="background-color: #3498db;">
                     <i class="fa-solid fa-diagram-project"></i>
                   </div>
                   <div class="flex-grow-1">
@@ -390,81 +402,43 @@
             </div>
           </div>
 
-          <!-- 2025.06 -->
+          <!-- 2025.05 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202506">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202505">
                 <div class="d-flex align-items-center w-100">
-                  <div class="timeline-node bg-secondary me-3">
-                    <i class="fa-solid fa-database"></i>
+                  <div class="timeline-node me-3" style="background-color: #9b59b6;">
+                    <i class="fa-solid fa-handshake"></i>
                   </div>
                   <div class="flex-grow-1">
                     <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold">2025.06</span>
+                      <span class="fw-bold">2025.05</span>
                     </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">客户数据平台元数据驱动设计</small>
+                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">可解释型 LLM Data-Copilot</small>
                   </div>
                 </div>
               </button>
             </h2>
-            <div id="collapse202506" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+            <div id="collapse202505" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
               <div class="accordion-body">
                 <div class="row">
                   <div class="col-md-7">
-                    <p class="text-muted mb-3">基于客户数据平台(CDP)系统的应用落地，实现对 timeplus 和 pgsql 数据库元数据驱动设计的适配。</p>
+                    <p class="text-muted mb-3">基于大语言模型 (LLM) 的自然语言查询系统。自然语言提问，生成链路过程完全开放可干预，可解释，实现可靠的自然语言数据分析。</p>
                     <div class="mb-2">
-                      <span class="timeline-tag bg-secondary text-white">CDP</span>
-                      <span class="timeline-tag bg-primary text-white">Timeplus</span>
-                      <span class="timeline-tag bg-info text-white">PostgreSQL</span>
-                      <span class="timeline-tag bg-dark text-white">元数据驱动</span>
+                      <span class="timeline-tag bg-info text-white">可解释</span>
+                      <span class="badge rounded-pill badge-warning">Python</span>
+                      <span class="badge rounded-pill badge-danger">LLM</span>
+                    </div>
+                    <div class="mt-2">
+                      <a href="https://github.com/bytesc/data-copilot-steps" class="text-primary text-decoration-none small"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      <a href="https://gitee.com/bytesc/data-copilot-steps" class="text-danger text-decoration-none small ms-3"><i class="fa-brands fa-git-alt me-1"></i>Gitee</a>
                     </div>
                   </div>
                   <div class="col-md-5">
-                    <div class="timeline-img-container bg-light d-flex align-items-center justify-content-center">
-                      <div class="text-center text-muted">
-                        <i class="fa-solid fa-server fa-3x mb-2"></i>
-                        <div>元数据驱动支持</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2025.08 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202508">
-                <div class="d-flex align-items-center w-100">
-                  <div class="timeline-node bg-dark me-3">
-                    <i class="fa-solid fa-heart-pulse"></i>
-                  </div>
-                  <div class="flex-grow-1">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold">2025.08</span>
-                    </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">医疗护理行业私有数据应用</small>
-                  </div>
-                </div>
-              </button>
-            </h2>
-            <div id="collapse202508" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
-              <div class="accordion-body">
-                <div class="row">
-                  <div class="col-md-7">
-                    <p class="text-muted mb-3">基于医疗护理行业私有数据的行业应用落地。</p>
-                    <div class="mb-2">
-                      <span class="timeline-tag bg-danger text-white">医疗健康</span>
-                      <span class="timeline-tag bg-dark text-white">私有数据</span>
-                      <span class="timeline-tag bg-secondary text-white">数据安全</span>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="timeline-img-container bg-light d-flex align-items-center justify-content-center">
-                      <div class="text-center text-muted">
-                        <i class="fa-solid fa-user-doctor fa-3x mb-2"></i>
-                        <div>医疗护理行业私有数据</div>
+                    <div class="timeline-img-container">
+                      <img src="./static/img/imgd.png" alt="可解释型 LLM Data-Copilot">
+                      <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-network-wired me-1"></i>可解释型 LLM Data-Copilot
                       </div>
                     </div>
                   </div>
@@ -478,7 +452,7 @@
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202601">
                 <div class="d-flex align-items-center w-100">
-                  <div class="timeline-node me-3" style="background-color: #6f42c1;">
+                  <div class="timeline-node me-3" style="background-color: #1abc9c;">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
                   <div class="flex-grow-1">
@@ -509,8 +483,12 @@
                   <div class="col-md-5">
                     <div class="timeline-img-container bg-light d-flex align-items-center justify-content-center">
                       <div class="text-center text-muted">
-                        <i class="fa-solid fa-gears fa-3x mb-2"></i>
-                        <div>OpenSearch DSL架构</div>
+                        <!-- <i class="fa-solid fa-gears fa-3x mb-2"></i>
+                        <div>OpenSearch DSL架构</div> -->
+                        <img src="./static/img/flowo.png" alt="OpenSearch DSL架构">
+                        <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-network-wired me-1"></i>OpenSearch DSL架构
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -519,54 +497,16 @@
             </div>
           </div>
 
-          <!-- 2026.04 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202604">
-                <div class="d-flex align-items-center w-100">
-                  <div class="timeline-node me-3" style="background-color: #20c997;">
-                    <i class="fa-solid fa-dna"></i>
-                  </div>
-                  <div class="flex-grow-1">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold">2026.04</span>
-                    </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">生物科技创新投资生态应用</small>
-                  </div>
-                </div>
-              </button>
-            </h2>
-            <div id="collapse202604" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
-              <div class="accordion-body">
-                <div class="row">
-                  <div class="col-md-7">
-                    <p class="text-muted mb-3">基于生物科技创新投资生态领域私有数据的行业应用落地。</p>
-                    <div class="mb-2">
-                      <span class="timeline-tag bg-success text-white">生物科技</span>
-                      <span class="timeline-tag bg-warning text-dark">投资生态</span>
-                      <span class="timeline-tag bg-info text-white">创新数据</span>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="timeline-img-container bg-light d-flex align-items-center justify-content-center">
-                      <div class="text-center text-muted">
-                        <i class="fa-solid fa-microscope fa-3x mb-2"></i>
-                        <div>生物科技创新投资平台</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
+
 
           <!-- 时间线延伸 -->
           <div class="accordion-item" style="background: transparent; box-shadow: none;">
             <div class="d-flex align-items-center justify-content-center py-4" style="position: relative;">
               <div class="text-center" style="margin-left: 40px; color: #6c757d; font-style: italic;">
-                <i class="fa-solid fa-ellipsis fa-beat" style="color: #20c997; margin-right: 8px;"></i>
+                <i class="fa-solid fa-ellipsis fa-beat" style="color: #1abc9c; margin-right: 8px;"></i>
                 持续演进中，更多里程碑即将到来...
-                <i class="fa-solid fa-arrow-trend-up" style="color: #20c997; margin-left: 8px;"></i>
+                <i class="fa-solid fa-arrow-trend-up" style="color: #1abc9c; margin-left: 8px;"></i>
               </div>
             </div>
           </div>
@@ -579,187 +519,11 @@
 </section>
 <!-- End Timeline Section -->
 
-<style>
-  .timeline {
-    position: relative;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, #0d6efd, #20c997);
-  }
-  .timeline-item {
-    position: relative;
-    padding-left: 50px;
-  }
-  .timeline-icon {
-    position: absolute;
-    left: 8px;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  .timeline-item .card {
-    border: none;
-    border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .timeline-item .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
-  }
-  @media (max-width: 768px) {
-    .timeline::before {
-      left: 15px;
-    }
-    .timeline-item {
-      padding-left: 40px;
-    }
-    .timeline-icon {
-      left: 3px;
-      width: 24px;
-      height: 24px;
-    }
-  }
-  /* 可折叠时间线样式 */
-.timeline-accordion .accordion-item {
-  border: none;
-  background: transparent;
-  margin-bottom: 12px;
-}
 
-.timeline-accordion .accordion-button {
-  border-radius: 10px !important;
-  padding: 16px 20px;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  border: none;
-}
-
-.timeline-accordion .accordion-button:not(.collapsed) {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-}
-
-.timeline-accordion .accordion-button:not(.collapsed)::after {
-  filter: brightness(0) invert(1);
-}
-
-.timeline-accordion .accordion-button:focus {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  border-color: transparent;
-}
-
-.timeline-accordion .accordion-body {
-  padding: 20px;
-  background: white;
-  border-radius: 0 0 10px 10px;
-  margin-top: -5px;
-  position: relative;
-  z-index: 0;
-}
-
-/* 时间线连接线 */
-.timeline-line {
-  position: absolute;
-  left: 24px;
-  top: 0;
-  bottom: 0;  /* 延伸到容器底部 */
-  width: 3px;
-  /* 修改渐变：最后一段渐变为透明，实现淡出效果 */
-  background: linear-gradient(
-    to bottom, 
-    #0d6efd 0%,      /* 蓝色开始 */
-    #20c997 25%,     /* 青绿色 */
-    #dc3545 50%,     /* 红色 */
-    #20c997 75%,     /* 青绿色 */
-    transparent 100% /* 渐变淡出到透明 */
-  );
-  z-index: 0;
-}
-
-/* 时间节点图标 */
-.timeline-node {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 14px;
-  flex-shrink: 0;
-  z-index: 1;
-}
-
-/* 图片区域样式 */
-.timeline-img-container {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  height: 100%;
-  min-height: 120px;
-}
-
-.timeline-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.timeline-img-container:hover img {
-  transform: scale(1.05);
-}
-
-.timeline-img-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-  padding: 15px;
-  color: white;
-  font-size: 12px;
-}
-
-/* 标签样式 */
-.timeline-tag {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 500;
-  margin-right: 6px;
-  margin-bottom: 6px;
-}
-
-/* 响应式 */
-@media (max-width: 768px) {
-  .timeline-line { left: 19px; }
-  .timeline-node { width: 28px; height: 28px; font-size: 12px; }
-  .timeline-img-container { min-height: 150px; margin-top: 15px; }
-}
-
-
-</style>
 <!-- End Timeline Section -->
 
-<section class="d-flex justify-content-center p-4 border-bottom" id="prj">
-        <h5 style="text-align: center"><i class="fa-solid fa-code"></i> Data Copilot系列 <i class="fa-solid fa-code"></i></h5>
+<section class="d-flex justify-content-center p-4 border-bottom" id="copilot">
+        <h5 style="text-align: center"><i class="fa-solid fa-code"></i> Data Copilot 系列行业落地应用 <i class="fa-solid fa-code"></i></h5>
 </section>
 
 <div class="container">
@@ -795,44 +559,13 @@
       </div>
     </div>
 
-
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" id="dtci">
-      <div class="card" style="width: auto; margin: 10px;">
-        <div class=" ratio ratio-16x9">
-          <img src="./static/img/imgd.png" class="card-img-top" alt="...">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-robot"></i> 可解释型 LLM Data-Copilot</h5>
-          <p class="card-text" style="height: 100px">基于大语言模型 (LLM) 的自然语言查询系统。自然语言提问，生成链路过程完全开放可干预，可解释，实现可靠的自然语言数据分析。 </p>
-          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-            <div>
-              <span class="badge rounded-pill badge-warning">Python</span>
-              <span class="badge rounded-pill badge-danger">LLM</span>
-              <span class="badge rounded-pill badge-success">SQL</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/data-copilot-steps" class="btn btn-dark" title="github">
-              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
-            </a></div>
-            <div class="col-3" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot-steps" class="btn btn-dark" title="gitee">
-              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
-            </a></div>
-            <div class="col-6" style="text-align: center;"><a href="http://www.bytesc.top:8037/" class="btn btn-success">
-              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> 在线演示
-            </a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" id="dtc3">
       <div class="card" style="width: auto; margin: 10px;">
         <div class=" ratio ratio-16x9">
           <img src="./static/img/dtc3.png" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
-          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-robot"></i> LLM Agent 并发预测模型</h5>
+          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-arrows"></i> LLM Agent 并发预测模型</h5>
           <p class="card-text" style="height: 100px">基于 LLM 和并发预测模型的 Data-copilot。通过基于 bert + regression 的模型智能预测最佳并发量，找到生成成功率和 LLM 调用成本的平衡。</p>
           <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
             <div>
@@ -863,7 +596,7 @@
           <img src="./static/img/dtc4.png" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
-          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-robot"></i> LLM Agent 智慧班级小程序</h5>
+          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-graduation-cap "></i> LLM Agent 智慧班级小程序</h5>
           <p class="card-text" style="height: 100px">基于LLM Agent的智能班级管理小程序，通过代码生成和函数调用实现多智能体协同，自然语言交互、成绩预测、统计分析、可视化等功能。</p>
           <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
             <div>
@@ -896,7 +629,7 @@
         </div>
         <div class="card-body">
           <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-city"></i> 新加坡城市交通与房地产行业应用</h5>
-          <p class="card-text" style="height: 100px">基于新加坡城市交通和房地产行业数据、房价评估模型、地图 API 的行业应用落地。</p>
+          <p class="card-text" style="height: 100px">Data Copilot 基于新加坡城市交通和房地产行业数据、房价评估模型、地图 API 的行业应用落地。</p>
           <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
             <div>
                  <span class="timeline-tag bg-warning text-dark">房价评估</span>
@@ -919,8 +652,96 @@
       </div>
     </div>
 
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/fa-server.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-database"></i> Data-copilot 元数据驱动设计 </h5>
+          <p class="card-text" style="height: 100px">基于客户数据平台(CDP)系统的应用落地，客户数据平台元数据驱动设计，实现对 timeplus 和 pgsql 数据库元数据驱动设计的适配。</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+                      <span class="timeline-tag bg-secondary text-white">CDP</span>
+                      <span class="timeline-tag bg-primary text-white">Timeplus</span>
+                      <span class="timeline-tag bg-info text-white">PostgreSQL</span>
+                      <span class="timeline-tag bg-dark text-white">元数据驱动</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> 在线演示
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>      
 
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/user-doctor.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-heart-pulse"></i> 医疗护理行业私有数据应用</h5>
+          <p class="card-text" style="height: 100px">Data Copilot 基于医疗护理行业私有数据的行业应用落地。</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+                  <span class="timeline-tag bg-danger text-white">医疗健康</span>
+                  <span class="timeline-tag bg-dark text-white">私有数据</span>
+                  <span class="timeline-tag bg-secondary text-white">数据安全</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> 在线演示
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/fa-microscope.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-dna"></i> 生物科技创新投资数据平台</h5>
+          <p class="card-text" style="height: 100px">Data Copilot 基于生物科技创新投资生态领域私有数据的行业应用落地。</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+                <span class="timeline-tag bg-success text-white">生物科技</span>
+                <span class="timeline-tag bg-warning text-dark">投资生态</span>
+                 <span class="timeline-tag bg-info text-white">创新数据</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> 在线演示
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
       <div class="card" style="width: auto; margin: 10px;">
@@ -929,17 +750,17 @@
         </div>
         <div class="card-body">
           <h5 class="card-title" style="height: 30px"><i class="fa-solid fa-arrow-right"></i> 敬请期待</h5>
-          <p class="card-text" style="height: 100px">Data Copilot 将继续进化，在更多实际领域落地应用</p>
+          <p class="card-text" style="height: 100px">Data Copilot 将继续进化，在更多实际领域落地应用...</p>
           <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
             <div>
               <span class="badge rounded-pill badge-secondary">...</span>
             </div>
           </div>
           <div class="row">
-            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/Django_Management_System_template" class="btn btn-dark disabled" title="github">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="github">
               <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
             </a></div>
-            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/Django_Management_System_template" class="btn btn-dark disabled" title="gitee">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="gitee">
               <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
             </a></div>
             <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
@@ -1469,6 +1290,184 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+<style>
+  .timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #0d6efd, #20c997);
+  }
+  .timeline-item {
+    position: relative;
+    padding-left: 50px;
+  }
+  .timeline-icon {
+    position: absolute;
+    left: 8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .timeline-item .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .timeline-item .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+  }
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 15px;
+    }
+    .timeline-item {
+      padding-left: 40px;
+    }
+    .timeline-icon {
+      left: 3px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  /* 可折叠时间线样式 */
+.timeline-accordion .accordion-item {
+  border: none;
+  background: transparent;
+  margin-bottom: 12px;
+}
+
+.timeline-accordion .accordion-button {
+  border-radius: 10px !important;
+  padding: 16px 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: none;
+}
+
+.timeline-accordion .accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.timeline-accordion .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.timeline-accordion .accordion-button:focus {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-color: transparent;
+}
+
+.timeline-accordion .accordion-body {
+  padding: 20px;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  margin-top: -5px;
+  position: relative;
+  z-index: 0;
+}
+
+/* 时间线连接线 */
+.timeline-line {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;  /* 延伸到容器底部 */
+  width: 3px;
+  /* 修改渐变：最后一段渐变为透明，实现淡出效果 */
+  background: linear-gradient(
+    to bottom, 
+    #e74c3c 0%,      /* 珊瑚红 */
+    #f39c12 25%,     /* 橙色 */
+    #3498db 50%,     /* 蓝色 */
+    #9b59b6 75%,     /* 紫色 */
+    transparent 100% /* 渐变淡出到透明 */
+  );
+  z-index: 0;
+}
+
+/* 时间节点图标 */
+.timeline-node {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* 图片区域样式 */
+.timeline-img-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 120px;
+}
+
+.timeline-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.timeline-img-container:hover img {
+  transform: scale(1.05);
+}
+
+.timeline-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  padding: 15px;
+  color: white;
+  font-size: 12px;
+}
+
+/* 标签样式 */
+.timeline-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .timeline-line { left: 19px; }
+  .timeline-node { width: 28px; height: 28px; font-size: 12px; }
+  .timeline-img-container { min-height: 150px; margin-top: 15px; }
+}
+
+
+</style>
 
 <script src="./static/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 <script src="./static/jquery-3.6.4.min.js"></script>
