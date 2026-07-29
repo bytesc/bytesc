@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,6 +52,12 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="#prj">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#copilot">Data-Copilot Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#copilot-t">Data-Copilot Evolution</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#ctc">Contact</a>
@@ -138,10 +144,13 @@
                   aria-labelledby="navbarDropdownMenuAvatar"
           >
             <li>
-              <a class="dropdown-item" href="http://blog.bytesc.top"><i class="fa-brands fa-blogger me-3"></i>BLOG</a>
+              <a class="dropdown-item" href="#prj"><i class="fa-solid fa-laptop-code me-3"></i>Projects</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#prj"><i class="fa-solid fa-laptop-code me-3"></i>Projects</a>
+              <a class="dropdown-item" href="#copilot"></i>Data-Copilot Apps</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#copilot-t"></i>Data-Copilot Evolution</a>
             </li>
             <li>
               <a class="dropdown-item" href="#ctc"><i class="fa-solid fa-address-book me-3"></i>Contact</a>
@@ -237,6 +246,568 @@
    
 </div>
 
+<!-- Timeline Section -->
+<section class="py-5 bg-light position-relative" >
+  <div class="container position-relative">
+    
+    <h5 class="text-center mb-4 fw-bold">
+      <i class="fa-solid fa-timeline me-2 text-primary"></i> Data-Copilot Project Evolution
+    </h5>
+    
+    <div class="row justify-content-center" id="copilot-t">
+      <div class="col-lg-11 position-relative">
+        
+        <div class="timeline-line"></div>
+        
+        <div class="accordion timeline-accordion" id="timelineAccordion">
+          
+          <!-- 2024.05 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202405" >
+                <div class="d-flex align-items-center w-100">
+                  <div class="timeline-node me-3" style="background-color: #FF6B6B;">
+                    <i class="fa-solid fa-rocket"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">2024.05</span>
+                    </div>
+                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">NL Database Query & Analytics System</small>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapse202405" class="accordion-collapse collapse show" data-bs-parent="#timelineAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p class="text-muted mb-3">A natural language database query and analytics system based on LLM. Enables NL questions, intelligent multi-table queries, statistical calculations, and smart chart generation.</p>
+                    <div class="mb-2">
+                      <span class="timeline-tag bg-warning text-dark">LLM</span>
+                      <span class="timeline-tag bg-danger text-white">Error Retry</span>
+                      <span class="timeline-tag bg-info text-white">Multi-threading</span>
+                    </div>
+                    <div class="mt-2">
+                      <a href="https://github.com/bytesc/data-copilot" class="text-primary text-decoration-none small"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      <a href="https://gitee.com/bytesc/data-copilot" class="text-danger text-decoration-none small ms-3"><i class="fa-brands fa-git-alt me-1"></i>Gitee</a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="timeline-img-container">
+                      <img src="./static/img/dtc.png" alt="Data-Copilot">
+                      <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-database me-1"></i>Data-Copilot
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2024.10 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202410">
+                <div class="d-flex align-items-center w-100">
+                  <div class="timeline-node me-3" style="background-color: #FFA94D;">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">2024.10</span>
+                    </div>
+                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">BERT Regression Agent Self-Evaluation</small>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapse202410" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p class="text-muted mb-3">Uses BERT and regression models for agent self-evaluation, predicting question difficulty from historical results to plan optimal concurrency and retries, improving stability while reducing compute costs and LLM hallucinations.</p>
+                    <div class="mb-2">
+                      <span class="timeline-tag bg-primary text-white">BERT</span>
+                      <span class="timeline-tag bg-success text-white">Regression</span>
+                      <span class="timeline-tag bg-warning text-dark">Cost Optimization</span>
+                    </div>
+                    <div class="mt-2">
+                      <a href="https://github.com/bytesc/data-copilot-v2" class="text-primary text-decoration-none small"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      <a href="https://gitee.com/bytesc/data-copilot-v2" class="text-danger text-decoration-none small ms-3"><i class="fa-brands fa-git-alt me-1"></i>Gitee</a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="timeline-img-container">
+                      <img src="./static/img/dtc3.png" alt="Concurrency Prediction Model">
+                      <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-chart-line me-1"></i>Smart Concurrency Model
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2025.01 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202501">
+                <div class="d-flex align-items-center w-100">
+                  <div class="timeline-node me-3" style="background-color: #4DABF7;">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">2025.01</span>
+                    </div>
+                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">Code COT & Function Dependency Graph</small>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapse202501" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p class="text-muted mb-3">Introduces code-based Chain of Thought (COT), Agent as Function, and Function Graph concepts for multi-agent collaboration. Enables agents to clarify ambiguous user requests through follow-up questions.</p>
+                    <div class="mb-2">
+                      <span class="timeline-tag bg-success text-white">COT</span>
+                      <span class="timeline-tag bg-primary text-white">Function Graph</span>
+                      <span class="timeline-tag bg-info text-white">Multi-Agent</span>
+                    </div>
+                    <div class="mt-2">
+                      <a href="https://github.com/bytesc/data-copilot-functions" class="text-primary text-decoration-none small"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      <a href="https://gitee.com/bytesc/data-copilot-functions" class="text-danger text-decoration-none small ms-3"><i class="fa-brands fa-git-alt me-1"></i>Gitee</a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="timeline-img-container">
+                      <img src="./static/img/data-copilot-functions.png" alt="COT and Multi-Agent Collaboration">
+                      <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-network-wired me-1"></i>COT & Multi-Agent Collaboration
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2025.05 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202505">
+                <div class="d-flex align-items-center w-100">
+                  <div class="timeline-node me-3" style="background-color: #9775FA;">
+                    <i class="fa-solid fa-eye"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">2025.05</span>
+                    </div>
+                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">Interpretable LLM Data-Copilot</small>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapse202505" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p class="text-muted mb-3">An interpretable NL query system based on LLM. The generation pipeline is fully open and intervenable, enabling reliable and explainable natural language data analysis.</p>
+                    <div class="mb-2">
+                      <span class="timeline-tag bg-info text-white">Interpretable</span>
+                      <span class="timeline-tag bg-warning text-dark">Python</span>
+                      <span class="timeline-tag bg-danger text-white">LLM</span>
+                    </div>
+                    <div class="mt-2">
+                      <a href="https://github.com/bytesc/data-copilot-steps" class="text-primary text-decoration-none small"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      <a href="https://gitee.com/bytesc/data-copilot-steps" class="text-danger text-decoration-none small ms-3"><i class="fa-brands fa-git-alt me-1"></i>Gitee</a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="timeline-img-container">
+                      <img src="./static/img/imgd.png" alt="Interpretable LLM Data-Copilot">
+                      <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-eye me-1"></i>Interpretable LLM Data-Copilot
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2026.01 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202601">
+                <div class="d-flex align-items-center w-100">
+                  <div class="timeline-node me-3" style="background-color: #63E6BE;">
+                    <i class="fa-solid fa-compass"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">2026.01</span>
+                    </div>
+                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">OpenSearch DSL & JSON-Driven Chart Engine</small>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapse202601" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p class="text-muted mb-3">Introduces OpenSearch DSL-based query interface and a JSON-driven fixed chart rendering engine, providing reliable query capabilities for low-flexibility engineering scenarios.</p>
+                    <div class="mb-2">
+                      <span class="timeline-tag bg-primary text-white">OpenSearch</span>
+                      <span class="timeline-tag" style="background-color: #6f42c1; color: white;">DSL Query</span>
+                      <span class="timeline-tag bg-info text-white">JSON-Driven</span>
+                      <span class="timeline-tag bg-secondary text-white">Engineering</span>
+                    </div>
+                    <div class="mt-2">
+                      <a href="https://github.com/bytesc/data-copilot-v6" class="text-primary text-decoration-none small"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      <a href="https://gitee.com/bytesc/data-copilot-v6" class="text-danger text-decoration-none small ms-3"><i class="fa-brands fa-git-alt me-1"></i>Gitee</a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="timeline-img-container bg-light d-flex align-items-center justify-content-center">
+                      <div class="text-center text-muted">
+                        <img src="./static/img/flowo.png" alt="OpenSearch DSL Architecture">
+                        <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-compass me-1"></i>OpenSearch DSL Architecture
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2026.07 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse202607">
+                <div class="d-flex align-items-center w-100">
+                  <div class="timeline-node me-3" style="background-color: #E599F7;">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="fw-bold">2026.07</span>
+                    </div>
+                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">Complex Problem Decomposition & Case Distillation</small>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapse202607" class="accordion-collapse collapse" data-bs-parent="#timelineAccordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-7">
+                    <p class="text-muted mb-3">Decomposes complex problems into sub-task lists (To-do List) for agents to solve sequentially. Distills a knowledge base from successful historical dialogues, retrieving relevant cases to inject into new conversations. Supports proactive discussion with users to clarify ambiguous or incomplete requirements.</p>
+                    <div class="mb-2">
+                      <span class="timeline-tag bg-info text-white">Problem Decomposition</span>
+                      <span class="timeline-tag bg-primary text-white">Case Distillation</span>
+                      <span class="timeline-tag" style="background-color: #6f42c1; color: white;">Intent Discussion</span>
+                    </div>
+                    <div class="mt-2">
+                      <a href="https://github.com/bytesc/data-copilot-v8" class="text-primary text-decoration-none small"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      <a href="https://gitee.com/bytesc/data-copilot-v8" class="text-danger text-decoration-none small ms-3"><i class="fa-brands fa-git-alt me-1"></i>Gitee</a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="timeline-img-container bg-light d-flex align-items-center justify-content-center">
+                      <div class="text-center text-muted">
+                        <img src="./static/img/copilot_v8.png" alt="Complex Problem Decomposition and Case Distillation">
+                        <div class="timeline-img-overlay">
+                        <i class="fa-solid fa-wand-magic-sparkles me-1"></i>Problem Decomposition & Case Distillation
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline extension -->
+          <div class="accordion-item" style="background: transparent; box-shadow: none;">
+            <div class="d-flex align-items-center justify-content-center py-4" style="position: relative;">
+              <div class="text-center" style="margin-left: 40px; color: #6c757d; font-style: italic;">
+                <i class="fa-solid fa-ellipsis fa-beat" style="color: #E599F7; margin-right: 8px;"></i>
+                Evolving continuously, more milestones to come...
+                <i class="fa-solid fa-arrow-trend-up" style="color: #E599F7; margin-left: 8px;"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!-- End Timeline Section -->
+
+<!-- End Timeline Section -->
+
+<section class="d-flex justify-content-center p-4 border-bottom" id="copilot">
+        <h5 style="text-align: center"><i class="fa-solid fa-code"></i> Data Copilot Industry Applications <i class="fa-solid fa-code"></i></h5>
+</section>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" id="dtc">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/dtc.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-robot"></i> LLM-Based Data-Copilot</h5>
+          <p class="card-text" style="height: 140px">A NL query system using LangChain and LLM for intelligent multi-table database queries, statistical computations, and smart chart generation.</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+              <span class="timeline-tag bg-warning text-dark">Python</span>
+              <span class="timeline-tag bg-danger text-white">LLM</span>
+              <span class="timeline-tag bg-success text-white">LangChain</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/data-copilot" class="btn btn-dark" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot" class="btn btn-dark" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot/blob/master/display_video.mp4" class="btn btn-success">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Video
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" id="dtc3">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/dtc3.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-arrows"></i> LLM Agent Concurrency Model</h5>
+          <p class="card-text" style="height: 140px">Data-copilot with LLM and concurrency prediction. Uses BERT + regression to predict optimal concurrency, balancing success rate and LLM costs.</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+              <span class="timeline-tag bg-warning text-dark">AI</span>
+              <span class="timeline-tag bg-danger text-white">LLM</span>
+              <span class="timeline-tag bg-warning text-dark">Agent</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/data-copilot-v2" class="btn btn-dark" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot-v2" class="btn btn-dark" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot-v2/blob/master/demo_video.mp4" class="btn btn-success">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Video
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" id="dtc4">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/dtc4.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-graduation-cap "></i> LLM Agent Smart Class Mini-App</h5>
+          <p class="card-text" style="height: 140px">An intelligent class management mini-app leveraging LLM Agents. Code generation and function calls enable multi-agent synergy, NL interaction, grade prediction, analytics and visualization.</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+              <span class="timeline-tag bg-success text-white">WeChat</span>
+              <span class="timeline-tag bg-primary text-white">Class Mgmt</span>
+              <span class="timeline-tag bg-warning text-dark">EdTech</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/smart-class-back" class="btn btn-dark" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://gitee.com/bytesc/smart-class-back" class="btn btn-dark" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="https://gitee.com/bytesc/smart-class-back/blob/master/demo_video_480.mp4" class="btn btn-success">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Video
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" id="dtc4">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/sland.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-city"></i> Singapore Transport & Real Estate</h5>
+          <p class="card-text" style="height: 140px">Data Copilot industry application leveraging Singapore transport and real estate data, housing price models, and Map API.</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+                 <span class="timeline-tag bg-warning text-dark">Housing Price</span>
+                 <span class="timeline-tag bg-info text-white">Map API</span>
+                 <span class="timeline-tag bg-secondary text-white">Transport</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/data-copilot-functions-singapore" class="btn btn-dark" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot-functions-singapore" class="btn btn-dark" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Demo
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/fa-server.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-database"></i> Data-Copilot Metadata-Driven Design</h5>
+          <p class="card-text" style="height: 140px">CDP-based application with metadata-driven design, supporting Timeplus and PostgreSQL database metadata-driven adapters.</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+                      <span class="timeline-tag bg-secondary text-white">CDP</span>
+                      <span class="timeline-tag bg-primary text-white">Timeplus</span>
+                      <span class="timeline-tag bg-info text-white">PostgreSQL</span>
+                      <span class="timeline-tag bg-dark text-white">Metadata</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Demo
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>      
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/med_data.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-heart-pulse"></i> Healthcare Private Data Application</h5>
+          <p class="card-text" style="height: 140px">Data Copilot industry application based on private healthcare data.</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+                  <span class="timeline-tag bg-danger text-white">Healthcare</span>
+                  <span class="timeline-tag bg-dark text-white">Private Data</span>
+                  <span class="timeline-tag bg-secondary text-white">Data Security</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/data-copilot-med-data-v2" class="btn btn-dark" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/data-copilot-med-data-v2" class="btn btn-dark" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot-med-data-v2/blob/master/readme_img/demo_2-1.mp4" class="btn btn-success">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Video
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/fa-microscope.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-dna"></i> Biotech Innovation Investment Data Platform</h5>
+          <p class="card-text" style="height: 140px">Data Copilot industry application based on private data in the biotech innovation investment ecosystem.</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+                <span class="timeline-tag bg-success text-white">Biotech</span>
+                <span class="timeline-tag bg-warning text-dark">Investment</span>
+                 <span class="timeline-tag bg-info text-white">Innovation</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Demo
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+      <div class="card" style="width: auto; margin: 10px;">
+        <div class=" ratio ratio-16x9">
+          <img src="./static/img/prox.png" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="height: 60px"><i class="fa-solid fa-arrow-right"></i> Coming Soon</h5>
+          <p class="card-text" style="height: 140px">Data Copilot will continue to evolve and land in more real-world domains...</p>
+          <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div>
+              <span class="timeline-tag bg-secondary text-white">...</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="github">
+              <i class="fa-brands fa-github" style="color: #f0f0f0;"></i>
+            </a></div>
+            <div class="col-3" style="text-align: center;"><a href="https://github.com/bytesc/" class="btn btn-dark disabled" title="gitee">
+              <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
+            </a></div>
+            <div class="col-6" style="text-align: center;"><a href="#" class="btn btn-success disabled">
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Demo
+            </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+
 <section class="d-flex justify-content-center p-4 border-bottom" id="prj">
         <h5 style="text-align: center"><i class="fa-solid fa-code"></i> My Projects <i class="fa-solid fa-code"></i></h5>
 </section>
@@ -324,7 +895,7 @@
               <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
             </a></div>
             <div class="col-6" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot/blob/master/display_video.mp4" class="btn btn-success">
-              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> VIEDO
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Video
             </a></div>
           </div>
         </div>
@@ -385,7 +956,7 @@
               <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
             </a></div>
             <div class="col-6" style="text-align: center;"><a href="https://gitee.com/bytesc/data-copilot-v2/blob/master/demo_video.mp4" class="btn btn-success">
-              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> VIEDO
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Video
             </a></div>
           </div>
         </div>
@@ -415,7 +986,7 @@
               <i class="fa-brands fa-square-git" style="color: #ff7522"></i>
             </a></div>
             <div class="col-6" style="text-align: center;"><a href="https://gitee.com/bytesc/smart-class-back/blob/master/demo_video_480.mp4" class="btn btn-success">
-              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> VIEDO
+              <i class="fa-regular fa-desktop" style="color: #f0f0f0;"></i> Video
             </a></div>
           </div>
         </div>
@@ -818,6 +1389,179 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+<style>
+  .timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #0d6efd, #20c997);
+  }
+  .timeline-item {
+    position: relative;
+    padding-left: 50px;
+  }
+  .timeline-icon {
+    position: absolute;
+    left: 8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .timeline-item .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .timeline-item .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+  }
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 15px;
+    }
+    .timeline-item {
+      padding-left: 40px;
+    }
+    .timeline-icon {
+      left: 3px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .timeline-accordion .accordion-item {
+  border: none;
+  background: transparent;
+  margin-bottom: 12px;
+}
+
+.timeline-accordion .accordion-button {
+  border-radius: 10px !important;
+  padding: 16px 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: none;
+}
+
+.timeline-accordion .accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.timeline-accordion .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.timeline-accordion .accordion-button:focus {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-color: transparent;
+}
+
+.timeline-accordion .accordion-body {
+  padding: 20px;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  margin-top: -5px;
+  position: relative;
+  z-index: 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    to bottom, 
+    #FF6B6B 0%,
+    #FFA94D 15%,
+    #4DABF7 35%,
+    #9775FA 55%,
+    #63E6BE 70%,
+    #E599F7 85%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
+.timeline-node {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline-img-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 120px;
+}
+
+.timeline-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.timeline-img-container:hover img {
+  transform: scale(1.05);
+}
+
+.timeline-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  padding: 15px;
+  color: white;
+  font-size: 12px;
+}
+
+.timeline-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .timeline-line { left: 19px; }
+  .timeline-node { width: 28px; height: 28px; font-size: 12px; }
+  .timeline-img-container { min-height: 150px; margin-top: 15px; }
+}
+
+
+</style>
 
 <script src="./static/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 <script src="./static/jquery-3.6.4.min.js"></script>
