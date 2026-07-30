@@ -278,7 +278,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <span class="fw-bold">2024.05</span>
                     </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">自然语言数据库查询和统计分析系统</small>
+                    <small class="d-block timeline-description">自然语言数据库查询和统计分析系统</small>
                   </div>
                 </div>
               </button>
@@ -324,7 +324,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <span class="fw-bold">2024.10</span>
                     </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">BERT回归模型智能体自评估</small>
+                    <small class="d-block timeline-description">BERT回归模型智能体自评估</small>
                   </div>
                 </div>
               </button>
@@ -370,7 +370,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <span class="fw-bold">2025.01</span>
                     </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">代码生成思维链与函数依赖图</small>
+                    <small class="d-block timeline-description">代码生成思维链与函数依赖图</small>
                   </div>
                 </div>
               </button>
@@ -415,7 +415,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <span class="fw-bold">2025.05</span>
                     </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">可解释型 LLM Data-Copilot</small>
+                    <small class="d-block timeline-description">可解释型 LLM Data-Copilot</small>
                   </div>
                 </div>
               </button>
@@ -460,7 +460,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <span class="fw-bold">2026.01</span>
                     </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">OpenSearch DSL与JSON驱动绘图引擎</small>
+                    <small class="d-block timeline-description">OpenSearch DSL与JSON驱动绘图引擎</small>
                   </div>
                 </div>
               </button>
@@ -511,7 +511,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <span class="fw-bold">2026.07</span>
                     </div>
-                    <small class="text-muted d-block text-truncate" style="max-width: 60%;">复杂问题拆解和成功案例蒸馏</small>
+                    <small class="d-block timeline-description">复杂问题拆解和成功案例蒸馏</small>
                   </div>
                 </div>
               </button>
@@ -1482,6 +1482,59 @@
   .timeline-line { left: 19px; }
   .timeline-node { width: 28px; height: 28px; font-size: 12px; }
   .timeline-img-container { min-height: 150px; margin-top: 15px; }
+}
+
+/* 时间线标题描述文字可复制且支持多行 */
+.timeline-description {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  cursor: text;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  color: #6c757d;
+}
+
+.timeline-accordion .accordion-button .timeline-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.timeline-accordion .accordion-button[aria-expanded="true"] .timeline-description,
+.timeline-accordion .accordion-button:not(.collapsed) .timeline-description {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+  text-overflow: unset;
+  color: #fff !important;
+}
+
+.timeline-description::selection {
+  color: #fff !important;
+  background-color: #4a5bd4 !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.timeline-description::-moz-selection {
+  color: #fff !important;
+  background-color: #4a5bd4 !important;
+}
+
+.timeline-accordion .accordion-button:not(.collapsed) .timeline-description::selection {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.35) !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.timeline-accordion .accordion-button:not(.collapsed) .timeline-description::-moz-selection {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.35) !important;
 }
 
 
